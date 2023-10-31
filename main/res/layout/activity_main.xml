@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cake_ldpi"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:background="@color/white"
+                android:src="@drawable/cropped"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-medium"
+                android:text="TAYARI BAKERS"
+                android:textAlignment="center"
+                android:paddingRight="7dp"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold" />
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:text = "Choose the cake type"
+                >
+
+            </TextView>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:text="vanilla"
+                    android:textColor="@color/white"
+                    ></RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:text="Black Forest"
+                    android:textColor="@color/white"
+                    ></RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:text="White Forest"
+                    android:textColor="@color/white"
+                    ></RadioButton>
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text = "Choose the cake size"
+                >
+
+            </TextView>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="#E91E63"
+                android:paddingLeft="3dp"
+                android:shadowColor="@color/red"
+                android:text="Small @ 100ksh"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:id = "@+id/small_input_checkbox">
+            </CheckBox>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/gold"
+                android:enabled="false"
+                android:text="Enter number of cakes ?"
+                android:inputType="number"
+                android:id="@+id/small_input"
+                ></EditText>
+
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Medium @ 200ksh"
+                    android:paddingLeft="3dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:id = "@+id/medium_input_checkbox"
+                    ></CheckBox>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/gold"
+                android:enabled="false"
+                android:text="Enter number of cakes ?"
+                android:inputType="number"
+                android:id="@+id/medium_input"
+
+                ></EditText>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="3dp"
+                    android:text="Large @ 300ksh"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:id = "@+id/large_input_checkbox"></CheckBox>
+
+            <EditText
+                android:id="@+id/large_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:text="Enter number of cakes ?"
+                android:textColor="@color/gold"
+                android:enabled="false"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:text = "Balance : 0ksh"
+                android:id="@+id/txt_balance"
+                ></TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Check price"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:id = "@+id/btn_price"
+                ></Button>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text = "Enter Payment Details"
+                    ></TextView>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="#E91E63"
+                android:paddingLeft="3dp"
+                android:shadowColor="@color/red"
+                android:text="MPESA"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:id = "@+id/mpesa_checkbox"></CheckBox>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/gold"
+                android:text="Enter Mpesa amount"
+                android:inputType="number"
+                android:id="@+id/mpesa_entry"
+                android:enabled="false"
+                ></EditText>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CASH"
+                android:paddingLeft="3dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id = "@+id/cash_checkbox"
+                ></CheckBox>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/gold"
+                android:text="Enter cash amount"
+                android:inputType="number"
+                android:id="@+id/cash_entry"
+                android:enabled="false"
+                ></EditText>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="3dp"
+                android:text="CHEQUE"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:id = "@+id/cheque_checkbox"></CheckBox>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/gold"
+                android:text="Enter Cheque amount"
+                android:inputType="number"
+                android:id="@+id/cheque_entry"
+                android:enabled="false"
+                ></EditText>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text = "Pending Submission"
+    android:textSize="20sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:id = "@+id/substatus"
+    ></TextView>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="RESET"
+    android:id="@+id/btn_reset"
+    android:textColor="@color/red"
+    android:textSize="30sp"
+
+    ></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBMIT"
+                android:id="@+id/btn_submit"
+                android:textColor="@color/green"
+                android:textSize="30sp"
+
+                ></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="normal"
+                android:id="@+id/btn_exit"
+                android:text="EXIT"
+                android:textSize="30sp"
+                android:textColor="@color/orange"
+                ></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
